@@ -11,6 +11,10 @@
 
 <body ng-controller="ExpensesViewController">
     {{name}}
+    <h1>{{phrase}}</h1>
+
+    {{expense.description}} - {{expense.amount}}
+    <button ng-click="increaseAmount()">Increase Amount</button>
 </body>
 
 </html>
