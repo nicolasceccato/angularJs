@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="expensesApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app1.js"></script>
+</head>
+
+<body ng-controller="ExpensesViewController">
+
+    <h1>List of Elements using ng-repeat</h1>
+
+    <ul>
+        <li ng-repeat="item in items">{{item.name}}, ingredients:
+            <span ng-repeat="ingredient in item.ingredients">{{ingredient}} </span>
+        </li>
+    </ul>
+</body>
+
+</html>
